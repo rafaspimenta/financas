@@ -29,7 +29,7 @@ public class TesteJPA {
             System.out.println(conta);
             entityManager.getTransaction().commit();
         } finally {
-            entityManager.close();
+            JPAUtil.close();
         }
 
         double fim = System.currentTimeMillis();
